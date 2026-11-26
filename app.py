@@ -4,7 +4,10 @@ app = Flask(__name__)
 
 @app.get('/')
 def home():
-    return jsonify(message='Hello from my DevOps CI/CD project!', status='running')
+    return jsonify(
+	message='My DevOps project is now version controlled!', 
+	status='running'
+	)
 
 @app.get('/health')
 def health():
